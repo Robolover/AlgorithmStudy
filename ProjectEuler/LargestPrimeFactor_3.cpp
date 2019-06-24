@@ -26,9 +26,8 @@ void get_prime_factor(__int64 num)
     {
         if(num % i == 0)
         {
-            std::cout << i << " ";
+            std::cout << i << std::endl;
             num /= i;
-            std::cout << num << std::endl;
             get_prime_factor(num);
             break;
         }
